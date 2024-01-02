@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.sm-btn {
+  color: #fff;
+  padding-inline: 32px;
+  padding-block: 16px;
+  background: #13829b;
+  border-radius: 8px;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* navbar style */
+#main-nav {
+}
+
+#main-nav .navbar {
+  height: 112px;
+  display: flex;
+
+  /* x */
+  justify-content: space-between;
+  /* y */
+  align-items: center;
+  padding-inline: 80px;
+  border-bottom: 2px solid black;
+  /* margin-inline: 80px; */
+}
+#main-nav .navbar .navbar-nav .nav-item-list {
+  display: flex;
+  list-style: none;
+  gap: 77px;
+}
+#main-nav .navbar .navbar-nav .nav-item-list .nav-item {
+  position: relative;
+}
+#main-nav .navbar .navbar-nav .nav-item-list .nav-item::before {
+  content: "";
+  width: 100%;
+  height: 8px;
+  background: #000;
+  position: absolute;
+  bottom: -49px;
+}
+#main-nav .navbar .navbar-nav .nav-item-list .nav-item .nav-link {
+  font-size: 18px;
+}
+.aaa {
+  width: 200px;
+  height: 200px;
+  background: red;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  z-index: -1;
+  /* z-index: 111; */
+}
+.bbb {
+  width: 200px;
+  height: 200px;
+  background: rgb(0, 255, 81);
+  position: absolute;
+  top: 180px;
+  left: 180px;
+  z-index: -2;
+}
+
+.parent {
+  margin-left: 500px;
+  margin-top: 200px;
+  background: #000;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  z-index: -1;
+  /* z-index: 112; */
+}
+#hero-section {
+  width: 1728px;
+  margin-block-start: 50px;
+}
+#hero-section .container {
+  display: flex;
+}
+#hero-section .container .text {
+  width: 50%;
+}
+#hero-section .container .showcase {
+  width: 50%;
+  height: 700px;
+  border: 5px solid;
+}
+#hero-section .container .showcase .show-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+#hero-section .container .showcase .show-wrapper .bottom {
+  width: 100%;
+  height: 40%;
+  background: #fcc29a;
+}
+#hero-section .container .showcase .show-wrapper img {
+  height: 600px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#hero-section .container .showcase .show-wrapper .blue {
+  position: absolute;
+  left: 500px;
+  top: 350px;
+  width: 150px;
+  height: 150px;
+  background: #29d2e4;
+  mix-blend-mode: multiply;
+}
+#hero-section .container .showcase .show-wrapper .round {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+  top: 200px;
+  left: 280px;
+  filter: grayscale(100%);
+  border: 4px solid white;
+}
